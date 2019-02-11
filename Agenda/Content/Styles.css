@@ -1,0 +1,49 @@
+﻿
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2
+{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px;
+}
+
+p
+{
+    margin : 10px;
+}
+a, p {
+    color: white;
+    font-size: large;
+}
+
+    a:active {
+        color: darkturquoise;
+    }
+
+
+body {
+    background: url(/Content/bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+form {
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+
+input
+{
+    margin : 10px;
+}
+
+input:focus
+
+{
+    border : 2px solid green;
+}

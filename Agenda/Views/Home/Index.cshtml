@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav class="navbar navbar-dark bg-primary text-center " id="bouton">
+    <!-- Navbar content -->
+    <button type="button" class="btn text-uppercase"><a href="/Home/AddAppointment/">Ajouter un RDV</a></button>
+    <button type="button" class="btn text-uppercase"><a href="/Home/AddBroker/">Ajouter un courtier</a></button>
+    <button type="button" class="btn text-uppercase"><a href="/Home/AddCustomer/">Ajouter un client</a></button>
+    <button type="button" class="btn text-uppercase"><a href="/Home/ListBrokers/">Liste des courtiers</a></button>
+    <button type="button" class="btn text-uppercase"><a href="/Home/ListCustomers/">Liste des clients</a></button>
+</nav>
+
+<section class=" header text-uppercase text-white">
+
+    <p class="text-center">Nous sommes le @ViewData["date"]</p>
+    <h1 class="text-center">Voici la liste des rendez-vous de la journée : </h1>
+
+</section>

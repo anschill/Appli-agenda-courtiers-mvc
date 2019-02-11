@@ -1,0 +1,17 @@
+﻿@model List<Agenda.Models.Broker>
+@{
+    ViewBag.Title = "ListBrokers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListBrokers</h2>
+
+
+<!--Afficher le prénom & le nom de chaque broker dans la liste Brokers du Model , il faut toujours déclarer la variable !!! -->
+@foreach( var broker in Model)
+{
+<p>@broker.FirstName</p>
+<p>@broker.LastName</p>
+}
+
+
