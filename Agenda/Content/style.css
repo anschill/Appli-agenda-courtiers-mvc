@@ -1,0 +1,66 @@
+﻿/*/* NAVBAR*/
+/*.nav-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}*/
+
+.active {
+    background-color: rgb(16, 35, 80);
+}
+
+/*FORM*/
+
+/*form {
+    background-color: rgba(16, 35, 80, 0.7);
+    border: 3px solid rgb(16, 35, 80);
+    box-shadow: 1em -1em rgb(16, 35, 80);
+    padding: 25px;
+    text-align: center;
+    margin: 30px;
+    overflow: hidden;
+}
+
+ul {
+    text-align: center;
+    width: 20vw; margin: auto;
+}
+label {
+    margin: 25px;
+}
+
+input {
+    margin-top: 20px;
+    float: right;
+    clear: both;
+}
+
+    input:focus {
+        border: 2px solid green;
+    }*/
+
+    /*TABLE*/
+/*#table {
+    background-color: rgba(16, 35, 80, 0.7);
+    color : white;
+}*/
+/*BODY*/
+
+/* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+body {
+    background: url();
+    background-color: rgba(16, 35, 80, 0.3);
+}*/
+
+
+/*h1, h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 25px;
+    color: rgb(16, 35, 80);
+}*/

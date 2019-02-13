@@ -4,5 +4,43 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>AddCustomer</h2>
+<link href="~/Content/styleAddCustomer.css" rel="stylesheet" />
 
+<h1 class="text-uppercase">Ajouter un client</h1>
+
+<div class="container text-uppercase">
+    <div class="row">
+        <div class="col-12">
+            <form action="text" method="post" class="text-left text-white">
+                <p>
+                    <label>Nom du client  :</label>
+                    <input type="text" name="name" title="Nom" autofocus maxlength="50" required/>
+                </p>
+                <p>
+                    <label>  Prénom du client : </label>
+                    <input type="text" name="name" title="Prénom"  maxlength="50" required/>
+                </p>
+                <p>
+                    <label> E-Mail : </label>
+                    <input type="email" name="name" title="Nom"  maxlength="150" required/>
+                </p>
+                <p>
+                    <label>Numéro de téléphone :</label>
+                    <input type="text" name="name" title="Prénom" maxlength="12" required/>
+                </p>
+                <p>
+                    <input type="submit" value="Envoyer le formulaire" id="sub" class="text-center" required >
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+        $(function(){
+            $('#navbar').on('click', '.nav-item', function(){
+                $('.nav-item').removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+</script>

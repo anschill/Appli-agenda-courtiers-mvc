@@ -4,14 +4,47 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ListBrokers</h2>
-
+<h1 class="text-uppercase">Liste des courtiers</h1>
 
 <!--Afficher le prénom & le nom de chaque broker dans la liste Brokers du Model , il faut toujours déclarer la variable !!! -->
-@foreach( var broker in Model)
-{
-<p>@broker.FirstName</p>
-<p>@broker.LastName</p>
-}
+<table align="center" class="table  table-bordered  text-center" id="table" style="width:75%; border-color: black;" >
+    <thead>
+        <tr>
+            <th>Nom </th>
+            <th>Prenom </th>
+            <th>Mail</th>
+            <th>Numéro de téléphone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var broker in Model)
+        {
+            <tr class="text-center">
+                <td>
+                    @broker.LastName
+                </td>
+                <td>
+                    @broker.FirstName
+                </td>
+                <td>
+                    @broker.Mail
+                </td>
+                <td>
+                    @broker.PhoneNumber
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('#navbar').on('click', '.nav-item', function () {
+            $('.nav-item').removeClass('active');
+            $(this).addClass('active');
+        })
+    })
+</script>
 
 

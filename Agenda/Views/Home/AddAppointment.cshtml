@@ -4,5 +4,38 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>AddAppointment</h2>
+<link href="~/Content/styleAddAppointment.css" rel="stylesheet" />
 
+<h1 class="text-uppercase">Ajouter un rendez-vous</h1>
+
+<div class="container text-uppercase">
+    <div class="row">
+        <div class="col-12">
+            <form action="text" method="post" class="text-left text-white">
+                <p>
+                    <label>Heure du rendez-vous  :</label>
+                    <input type="datetime-local" name="anniversary" title="Nom" autofocus required/>
+                </p>
+                <p>
+                    <label class="formu"> Courtier : </label>
+                    <input type="text" name="name" title="Prénom"/>
+                </p>
+                <p>
+                    <label class="formu"> Client :  </label>
+                    <input type="email" name="name" title="Nom" autofocus />
+                </p>
+                <input type="submit" value="Envoyer le formulaire" id="sub" class="text-center">
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+        $(function(){
+            $('#navbar').on('click', '.nav-item', function(){
+                $('.nav-item').removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+</script>

@@ -1,8 +1,45 @@
-﻿
+﻿@model List<Agenda.Models.Customer>
 @{
     ViewBag.Title = "ListCustomers";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>ListCustomers</h2>
+<h2>Liste de Clients</h2>
 
+<table align="center" style="width:75%; border-color: black;" class="table  table-bordered  text-center" id="table">
+    <thead>
+        <tr>
+            <th>Nom </th>
+            <th>Prenom </th>
+            <th>Mail</th>
+            <th>Numéro de téléphone</th>
+            <th>Budget :</th>
+            <th>Sujet : </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+        <tr class="text-center">
+            <td>
+                @customer.LastName
+            </td>
+            <td>
+                @customer.FirstName
+            </td>
+            <td>
+                @customer.Mail
+            </td>
+            <td>
+                @customer.PhoneNumber
+            </td>
+            <td>
+                @customer.Budget
+            </td>
+            <td>
+                @customer.Subject
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

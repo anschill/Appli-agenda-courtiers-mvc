@@ -38,7 +38,8 @@ namespace Agenda.Controllers
         }
         public ActionResult ListCustomers()
         {
-            return View();
+            List<Customer> customers = db.Customers.ToList();
+            return View(customers);
         }
         public ActionResult ProfilBrokers()
         {
